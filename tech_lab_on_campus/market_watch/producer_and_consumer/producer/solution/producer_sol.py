@@ -1,7 +1,6 @@
 import os
 import pika
-from mqProducerInterface import mqProducerInterface
-
+from producer_interface import mqProducerInterface
 
 
 class mqProducer(mqProducerInterface):
@@ -21,6 +20,5 @@ class mqProducer(mqProducerInterface):
             routing_key=self.m_routing_key,
             body=message.encode("utf-8")
         )
-
         self.m_channel.close()
         self.m_connection.close()
