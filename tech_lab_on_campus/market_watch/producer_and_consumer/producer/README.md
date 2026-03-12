@@ -16,7 +16,7 @@ Below are bullet points of the criteria:
 - publishOrder:  Close Channel and Connection.  
 
 ## Testing
-
+  
 To test your producer class, we'll use Docker to set up a container running RabbitMQ. We'll then create a testing container where you can run the test code provided. To validate the messages are being sent, you'll utilize the RabbitMQ container's management web application.
 
 1. Log Into the RabbitMQ website.
